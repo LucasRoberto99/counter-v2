@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: black 1px solid;
+  /* border: black 1px solid; */
 }
 
 .counter {
@@ -35,13 +35,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: blue 1px solid;
+  /* border: blue 1px solid; */
   margin: 60px;
 }
 
 .boxcounter {
   display: flex;
-  border: 1px red solid;
+  /* border: 1px red solid; */
   margin: 20px;
   align-items: center;
 }
@@ -49,7 +49,7 @@
 .carre {
   width: 60px;
   height: 60px;
-  border: green 1px solid;
+  /* border: green 1px solid; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,4 +95,52 @@
   font-size: 25px;
   font-weight: bold;
   border-radius: 12px;
+}
+
+.nodisplay {
+  display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  margin: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  .counter {
+    /* height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: blue 1px solid; */
+    margin: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .allcounters {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    border: black 1px solid; */
+    flex-direction: column;
+  }
+
+  .header {
+    /* height: 160px;
+    border-bottom: 3px lightgrey solid;
+    font-size: 48px;
+    display: flex;
+    gap: 40px;
+    align-items: center; */
+    padding-left: 30px;
+  }
 }
